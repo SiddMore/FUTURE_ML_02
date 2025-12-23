@@ -38,15 +38,14 @@ The project compares multiple algorithms (Logistic Regression, Random Forest), w
 
 ### 1. Confusion Matrix
 *Visualizing how well the model predicts True Positives vs. True Negatives.*
-![Confusion Matrix](Screenshot%202025-12-23%20192723.png)
+
 
 ### 2. Classification Report
 *A detailed look at Precision, Recall, and F1-Scores for the Churn (1) and No-Churn (0) classes.*
-![Classification Report](Screenshot%202025-12-23%20192733.png)
 
 ### 3. Visual Analysis
 *Additional insights into model performance and feature distribution.*
-![Analysis](Screenshot%202025-12-23%20192738.png)
+
 
 ## 🏁 How to Run Locally
 
