@@ -1,53 +1,70 @@
-📊 Customer Churn Prediction 🚀
-📝 Project Overview
-This project aims to predict Customer Churn using machine learning techniques. By analyzing customer demographics and behavior, we identify those at risk of leaving, allowing businesses to take proactive retention measures.
+# 🏦 Customer Churn Prediction
 
-This task was completed as part of the Future Interns machine learning internship.
+![Status](https://img.shields.io/badge/Status-Completed-success?style=flat-square)
+![Python](https://img.shields.io/badge/Python-3.11-blue?style=flat-square&logo=python)
+![Library](https://img.shields.io/badge/Library-Scikit--Learn-orange?style=flat-square)
+![Model](https://img.shields.io/badge/Model-XGBoost-red?style=flat-square)
 
-🛠️ Key Features & Workflow
-Data Cleaning: Handled missing values and optimized data types.
+## 📄 Project Overview
+This project aims to predict **Customer Churn** (whether a customer will leave the bank or stay) based on their demographic and financial data. By identifying at-risk customers early, banks can implement retention strategies to reduce losses.
 
-EDA: Explored data distribution using Seaborn and Matplotlib.
+This project was developed as a machine learning task for **Future Interns**, utilizing **XGBoost** for high-performance classification.
 
-Feature Engineering: Applied LabelEncoder for categorical variables and StandardScaler for numerical scaling.
+## 🛠️ Tech Stack
+* **Language:** Python 🐍
+* **Data Manipulation:** Pandas, NumPy
+* **Visualization:** Matplotlib, Seaborn
+* **Machine Learning:** Scikit-Learn, XGBoost
+* **Environment:** Jupyter Notebook / Kaggle
 
-Modeling: Implemented multiple models including Logistic Regression, Random Forest, and the high-performance XGBoost Classifier.
+## 📊 Dataset Features
+The model analyzes the following key customer attributes to determine the likelihood of exit:
 
-Evaluation: Evaluated performance using Confusion Matrices, ROC-AUC curves, and Classification Reports.
+| Feature | Description |
+| :--- | :--- |
+| **CreditScore** | The customer's credit score. |
+| **Geography** | Country of residence (France, Spain, Germany). |
+| **Gender** | Male or Female. |
+| **Age** | Age of the customer. |
+| **Tenure** | Number of years the customer has been with the bank. |
+| **Balance** | Account balance. |
+| **NumOfProducts** | Number of bank products the customer uses. |
+| **HasCrCard** | Whether the customer holds a credit card (1=Yes, 0=No). |
+| **IsActiveMember** | Activity status of the customer (1=Active, 0=Inactive). |
+| **EstimatedSalary** | The customer's estimated annual salary. |
 
-🗂️ Dataset
-The model uses a Kaggle dataset containing customer information such as:
+## 🚀 Model Performance
+The project compares multiple algorithms (Logistic Regression, Random Forest), with **XGBoost** providing the best results.
 
-Geography & Gender 🌍
+### 1. Confusion Matrix
+*Visualizing how well the model predicts True Positives vs. True Negatives.*
+![Confusion Matrix](Screenshot%202025-12-23%20192723.png)
 
-Credit Score & Balance 💰
+### 2. Classification Report
+*A detailed look at Precision, Recall, and F1-Scores for the Churn (1) and No-Churn (0) classes.*
+![Classification Report](Screenshot%202025-12-23%20192733.png)
 
-Tenure & Number of Products 📅
+### 3. Visual Analysis
+*Additional insights into model performance and feature distribution.*
+![Analysis](Screenshot%202025-12-23%20192738.png)
 
-Membership Status & Salary 💳
+## 🏁 How to Run Locally
 
-📈 Visualizing the Results
-1. Confusion Matrix
-Understanding the True Positives and False Positives to ensure model reliability.
+1.  **Clone the Repository**
+    ```bash
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    cd your-repo-name
+    ```
 
-2. Model Performance Comparison
-Comparing XGBoost against other classifiers to find the best fit.
+2.  **Install Dependencies**
+    ```bash
+    pip install pandas matplotlib seaborn sklearn xgboost
+    ```
 
-3. Feature Importance
-Identifying which factors (like Age or Balance) contribute most to customer churn.
+3.  **Run the Notebook**
+    ```bash
+    jupyter notebook fut-ml-02.ipynb
+    ```
 
-🚀 How to Run
-Clone the repo:
-
-Bash
-
-git clone https://github.com/your-username/your-repo-name.git
-Install Dependencies:
-
-Bash
-
-pip install pandas matplotlib seaborn xgboost scikit-learn
-Run the Notebook: Open fut-ml-02.ipynb in Jupyter or Google Colab and run all cells.
-
-✨ Author
-Siddhi More, Future Interns ML Internship Task
+---
+*Created for Future Interns ML Task*
